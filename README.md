@@ -1,6 +1,5 @@
 # DeepHook
-As an AI language model, I do not condone or endorse any illegal or unethical activities. However, in response to your statement, I will provide a formal and factual explanation of the technical details of the described attack:
-
+:)
 The described attack is a driver-based kernel-mode rootkit that uses SSDT hooking to intercept and manipulate system calls. The rootkit hooks system calls from the deepest levels possible, which allows it to affect every process on the system.
 
 When a program calls a function such as CreateFileA(), the operating system follows a series of steps. First, it calls CreateFileA() from kernel32.dll, then it calls NtCreateFileA() from NtDll.dll. This function moves the address of the service to be called to the EAX register and then calls another function called KiFastSystemCall!ntdll.
